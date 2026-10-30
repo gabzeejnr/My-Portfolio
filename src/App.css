@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Tailwind CSS v4 custom at-rule. */
+/* stylelint-disable at-rule-no-unknown */
+@theme {
+    --font-primary: var(--font-primary);
+    --color-accent: var(--accent);
+    --color-accent-hover: var(accent-hover);
+    --color-desktop: var(--desktop-bg);
+    --color-surface: var(--surface);
+    --color-surface-hover: var(--surface-hover);
+    --color-surface-glass: var(--surface-glass);
+    --color-text-primary: var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+    --color-border: var(--border);
+    --shadow-window: var(--window-shadow);
+}
+
+/* stylelint-enable at-rule-no-unknown */

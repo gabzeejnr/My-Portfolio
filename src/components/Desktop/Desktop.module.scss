@@ -1,0 +1,28 @@
+.desktopBackground {
+    background-image: url("/desktop-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (prefers-color-scheme: dark) {
+        background-image: url("/desktop-wallpaper-dark.jpg");
+    }
+}
+
+.iconGrid {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 96px);
+    grid-auto-flow: column;
+    grid-auto-columns: 96px;
+    gap: 8px;
+    height: 100%;
+    overflow: hidden;
+    align-content: start;
+}
+
+.startIcon {
+    // bg-blue-500
+    height: 12px;
+    width: 12px;
+    background: linear-gradient(135deg, white, rgb(3, 54, 121));
+}

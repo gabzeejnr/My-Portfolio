@@ -1,0 +1,23 @@
+:root {
+    color-scheme: light dark;
+
+    --font-primary: "Inter", sans-serif;
+    --accent: light-dark(#625fe0, #7775f5);
+    --accent-hover: light-dark(#504cc9, #625fe0);
+    --desktop-bg: light-dark(#eef0f6, #111318);
+    --surface: light-dark(#ffffff, #1c2029);
+    --surface-hover: light-dark(#e8eaf2, #292e3a);
+    --surface-glass: light-dark(rgb(255 255 255 / 75%), rgb(25 28 38 / 75%));
+    --text-primary: light-dark(#20212a, #e8eaf0);
+    --text-secondary: light-dark(#686d7c, #a0a5b3);
+    --border: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.1));
+    --window-shadow: light-dark(0 12px 40px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0, 0, 0, 0.3));
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
