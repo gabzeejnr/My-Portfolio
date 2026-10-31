@@ -1,10 +1,10 @@
 import profileImage from "../assets/images/pm_1736661395510_cmp.jpg";
-import type { Skills } from "../types";
+import cherryvillePreview from "../assets/images/projects/cherryville-preview.png";
+import datacarePreview from "../assets/images/projects/datacare-preview.png";
+import type { ProjectCardProps, Skills } from "../types";
 
 
 const name = "Gabriel Dodowei";
-
-
 const skills: Skills[] = [
     {
         id: "html",
@@ -63,7 +63,7 @@ const skills: Skills[] = [
     {
         id: "express",
         title: "ExpressJs",
-        percentage:80,
+        percentage: 80,
         type: "backend"
     },
     {
@@ -74,4 +74,21 @@ const skills: Skills[] = [
     }
 ]
 
-export { name, skills, profileImage}
+const projects: ProjectCardProps[] = [
+    {
+        title: "Cherryville",
+        description: "Technology and business consultancy platform.",
+        image: cherryvillePreview,
+        previewUrl: "https://cherryville-ecru.vercel.app",
+        projectUrl: "https://cherryville-ecru.vercel.app"
+    },
+    {
+        title: "DataCare",
+        description: "Machine learning-based automated data cleaning and repair system.",
+        image: datacarePreview,
+        previewUrl: "https://data-cleaning-and-repair-system.vercel.app",
+        projectUrl: "https://data-cleaning-and-repair-system.vercel.app"
+    }
+]
+
+export { name, projects, skills, profileImage }

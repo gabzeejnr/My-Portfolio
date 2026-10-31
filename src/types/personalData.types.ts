@@ -5,4 +5,12 @@ interface Skills {
     type: "frontend" | "backend"
 }
 
-export type { Skills }
+interface ProjectCardProps {
+    title: string;
+    description: string;
+    image: string;
+    previewUrl?: string;
+    projectUrl?: string;
+}
+
+export type { ProjectCardProps, Skills }

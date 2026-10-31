@@ -25,17 +25,14 @@ export default function SkillProgress({
         <div className="space-y-2">
             <div className="flex items-center justify-between">
                 <span className="text-sm font-medium">{title}</span>
-                <span className="text-xs text-text-secondary tabular-nums">
-                    {percentage}%
-                </span>
+                <span className="text-xs text-text-secondary tabular-nums">{percentage}%</span>
             </div>
 
-            <div className="h-1.5 overflow-hidden rounded-full bg-surface-hover">
-                <div
+            <div className="h-1 overflow-hidden rounded-full bg-surface-hover">
+                <div style={{ width: `${progress}%` }}
                     className="h-full rounded-full bg-accent transition-[width] duration-1000 ease-out motion-reduce:transition-none"
-                    style={{ width: `${progress}%` }}
                 />
             </div>
         </div>
-    );
+    )
 }

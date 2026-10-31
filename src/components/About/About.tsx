@@ -1,6 +1,6 @@
 import { BriefcaseBusiness, Code2, FolderKanban, GraduationCap } from "lucide-react";
 import ProfileImage from "./ProfileImage";
-import { name, skills } from "../../data";
+import { name, projects, skills } from "../../data";
 import { InfoCard, ProjectCard, SectionHeading } from "./AboutCards";
 import SkillProgress from "../Skills/SkillProgress";
 
@@ -31,8 +31,7 @@ export default function About() {
                 <SectionHeading title="Currently building" />
 
                 <div className="grid gap-3 sm:grid-cols-2">
-                    <ProjectCard title="Cherryville" description="Technology and business consultancy platform." />
-                    <ProjectCard title="DataCare" description="Machine learning-based automated data cleaning and repair system." />
+                    {projects.slice(0, 2).map(project => <ProjectCard key={project.description} {...project} />)}
                 </div>
             </section>
 
