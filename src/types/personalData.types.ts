@@ -11,6 +11,9 @@ interface ProjectCardProps {
     image: string;
     previewUrl?: string;
     projectUrl?: string;
+    github?: string;
+    technologies: string[];
+    status: "deployed" | "in development"
 }
 
 export type { ProjectCardProps, Skills }

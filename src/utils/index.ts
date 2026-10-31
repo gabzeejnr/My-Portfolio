@@ -1,2 +1,3 @@
-export * from "./urls";
+export * from "./strings.util";
+export * from "./urls.util";
 export * from "./wifiChecker";

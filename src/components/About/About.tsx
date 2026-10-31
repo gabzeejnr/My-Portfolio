@@ -20,10 +20,10 @@ export default function About() {
                 <SectionHeading title="Developer profile" />
 
                 <div className="grid gap-3 sm:grid-cols-2">
-                    <InfoCard icon={Code2} title="Development" description="Frontend and Backend" />
-                    <InfoCard icon={GraduationCap} title="Learning" description="Continuously developing technical skills" />
-                    <InfoCard icon={BriefcaseBusiness} title="Approach" description="Learning through building real projects" />
-                    <InfoCard icon={FolderKanban} title="Projects" description="Personal and collaborative development" />
+                    <InfoCard icon={Code2} title="Frontend and Backend Development" description="Building across both sides of web development, from crafting user interfaces and interactive experiences to developing server-side functionality and application logic." />
+                    <InfoCard icon={GraduationCap} title="Learning" description="Consistently exploring new technologies, strengthening existing knowledge, and deepening my understanding of how software and systems work." />
+                    <InfoCard icon={BriefcaseBusiness} title="Approach" description="Learning by building, experimenting with ideas, solving practical problems, and improving through the challenges that come with developing real applications." />
+                    <InfoCard icon={FolderKanban} title="Projects" description="Working on personal projects and collaborative initiatives that provide opportunities to explore ideas, apply technical knowledge, and build practical software solutions." />
                 </div>
             </section>
 

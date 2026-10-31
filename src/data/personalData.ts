@@ -80,14 +80,20 @@ const projects: ProjectCardProps[] = [
         description: "Technology and business consultancy platform.",
         image: cherryvillePreview,
         previewUrl: "https://cherryville-ecru.vercel.app",
-        projectUrl: "https://cherryville-ecru.vercel.app"
+        projectUrl: "https://cherryville-ecru.vercel.app",
+        github: "https://github.com/gabzeejnr/cherryville",
+        technologies: ["React", "Typescript", "Express", "PostgreSQL", "Tailwind"],
+        status: "deployed"
     },
     {
         title: "DataCare",
         description: "Machine learning-based automated data cleaning and repair system.",
         image: datacarePreview,
         previewUrl: "https://data-cleaning-and-repair-system.vercel.app",
-        projectUrl: "https://data-cleaning-and-repair-system.vercel.app"
+        projectUrl: "https://data-cleaning-and-repair-system.vercel.app",
+        github: "https://github.com/gabzeejnr/data-cleaning-and-repair-system",
+        technologies: ["React", "Python", "Express", "PostgreSQL", "Tailwind"],
+        status: "in development"
     }
 ]
 

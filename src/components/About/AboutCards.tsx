@@ -51,6 +51,9 @@ function ProjectCard({ title, description, image, previewUrl, projectUrl }: Proj
     }
     const hide = () => setOpen(false)
 
+    useEffect(() => {
+        setLoaded(false);
+    }, [previewUrl]);
 
     useEffect(() => {
         if (!open) return;
@@ -71,7 +74,7 @@ function ProjectCard({ title, description, image, previewUrl, projectUrl }: Proj
                 ? "pointer-events-none opacity-0"
                 : "opacity-100"}`
             }>
-                <h3 className="font-display text-3xl leading-none">{title}</h3>
+                <h3 className="font-display text-3xl font-sans font-semibold leading-none">{title}</h3>
                 <p className="mt-2 max-w-[38ch] text-sm leading-relaxed text-white/70">{description}</p>
 
                 {previewUrl && (
