@@ -1,7 +1,7 @@
 import profileImage from "../assets/images/pm_1736661395510_cmp.jpg";
 import cherryvillePreview from "../assets/images/projects/cherryville-preview.png";
 import datacarePreview from "../assets/images/projects/datacare-preview.png";
-import type { ProjectCardProps, Skills } from "../types";
+import type { Project, Skills } from "../types";
 
 
 const name = "Gabriel Dodowei";
@@ -74,8 +74,9 @@ const skills: Skills[] = [
     }
 ]
 
-const projects: ProjectCardProps[] = [
+const projects: Project[] = [
     {
+        id: "cherryville",
         title: "Cherryville",
         description: "Technology and business consultancy platform.",
         image: cherryvillePreview,
@@ -86,14 +87,15 @@ const projects: ProjectCardProps[] = [
         status: "deployed"
     },
     {
+        id: "datacare",
         title: "DataCare",
         description: "Machine learning-based automated data cleaning and repair system.",
         image: datacarePreview,
         previewUrl: "https://data-cleaning-and-repair-system.vercel.app",
         projectUrl: "https://data-cleaning-and-repair-system.vercel.app",
         github: "https://github.com/gabzeejnr/data-cleaning-and-repair-system",
-        technologies: ["React", "Python", "Express", "PostgreSQL", "Tailwind"],
-        status: "in development"
+        technologies: ["React", "Python", "Typescript", "Express", "PostgreSQL", "Tailwind"],
+        status: "in-development"
     }
 ]
 

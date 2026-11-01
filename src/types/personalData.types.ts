@@ -1,3 +1,5 @@
+type ProjectStatus = "deployed" | "in-development" | "archived";
+
 interface Skills {
     id: string;
     title: string;
@@ -5,15 +7,19 @@ interface Skills {
     type: "frontend" | "backend"
 }
 
-interface ProjectCardProps {
+interface Project {
+    id: string;
     title: string;
     description: string;
+    overview?: string;
     image: string;
     previewUrl?: string;
     projectUrl?: string;
     github?: string;
+    features?: string[];
+    challenge?: string[];
     technologies: string[];
-    status: "deployed" | "in development"
+    status: ProjectStatus;
 }
 
-export type { ProjectCardProps, Skills }
+export type { Project, Skills }

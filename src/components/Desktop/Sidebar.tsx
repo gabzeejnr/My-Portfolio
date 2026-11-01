@@ -2,12 +2,8 @@ import { useRef, useState } from "react";
 import { desktopIcons } from "../../data";
 import type { DesktopIcon } from "../../types";
 
-interface SidebarProps {
-    icons?: DesktopIcon[];
-    onSelect?: (item: DesktopIcon) => void;
-}
 
-export default function Sidebar({ icons = desktopIcons, onSelect }: SidebarProps) {
+export default function Sidebar({ icons = desktopIcons, onSelect }: { icons?: DesktopIcon[], onSelect?: (item: DesktopIcon) => void }) {
     const [activeId, setActiveId] = useState("home");
     const isHovered = useRef<boolean>(false);
 

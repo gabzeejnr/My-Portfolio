@@ -5,7 +5,7 @@
 @theme {
     --font-primary: var(--font-primary);
     --color-accent: var(--accent);
-    --color-accent-hover: var(accent-hover);
+    --color-accent-hover: var(--accent-hover);
     --color-desktop: var(--desktop-bg);
     --color-surface: var(--surface);
     --color-surface-hover: var(--surface-hover);

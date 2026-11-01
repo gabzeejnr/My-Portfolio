@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import type { DesktopIcon } from "../types";
 import About from "../components/About/About";
+import Projects from "../components/Projects/Projects";
 
 const windowIcons: DesktopIcon[] = [
     {
@@ -36,6 +37,7 @@ const desktopIcons: DesktopIcon[] = [
         id: "projects",
         title: "Projects",
         icon: FolderKanban,
+        component: <Projects onSelectProject={()=>{}} />
     },
     {
         id: "skills",

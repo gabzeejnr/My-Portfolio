@@ -9,7 +9,7 @@ export interface InfoCardProps {
     description: string;
 }
 
-interface ProjectCardProps {
+interface Project {
     title: string;
     description: string;
     image: string;
@@ -38,7 +38,7 @@ function InfoCard({ icon: Icon, title, description }: InfoCardProps) {
     )
 }
 
-function ProjectCard({ title, description, image, previewUrl, projectUrl }: ProjectCardProps) {
+function ProjectCard({ title, description, image, previewUrl, projectUrl }: Project) {
     const [open, setOpen] = useState(false);
     const [everOpened, setEverOpened] = useState(false);
     const [loaded, setLoaded] = useState(false);
